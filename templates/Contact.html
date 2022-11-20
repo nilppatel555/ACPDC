@@ -1,0 +1,355 @@
+<html>
+
+<body>
+
+    <head>
+        <title>Registration-Page</title>
+        <!-- change or write your page title with the help of title tags-->
+        <link rel="stylesheet" type="text/css" href="Contact.css">
+        <!-- connect css file with html useing link tag -->
+        <link rel="stylesheet" type="text/css"
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- link this font-awesome icon css link with html file for accessing all fornt awesome
+        icon form boostrapcdn.com -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js">
+        </script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js">
+        </script>
+    </head>
+
+    <body>
+        <ul>
+            <!--starting ul tag to create unordered lists.-->
+            <li>
+                <!--The HTML li element is used to represent an item in a list. ... In menus and unordered lists-->
+                <!--the a tag defines a hyperlink, which is used to link from one page to another-->
+                <a href="Registration.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <!-- this is home icon link get form fornt-awesome icon for home button -->
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        <!-- copy and paste the home icon link here for hover effect -->
+                    </div>
+                    <div class="name"><span data-text="Registration">Registration</span></div>
+                    <!-- we are create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="Profile.html">
+                    <!-- this anchor text for link your About page to another page -->
+                    <div class="icon">
+                        <i class="fa  fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <!-- this is file icon link get form fornt-awesome icon for about -->
+                        <!-- copy and paste the file icon link here for hover effect -->
+                    </div>
+                    <div class="name"><span data-text="Profile">Profile</span></div>
+                    <!-- we are create second menu item name About -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- this anchor text for link your service page to another page -->
+                    <div class="icon">
+                        <i class="fa on fa-phone"></i>
+                        <!-- this is cogs icon link get form fornt-awesome iocn for service menu -->
+                        <i class="fa fa-phone"></i><!-- copy and paste the cogs icon link here for hover effect -->
+                    </div>
+                    <div class="name on"><span data-text="Contact">Contact</span></div>
+                    <!--- we are create third menu item name services -->
+                </a>
+            </li>
+            <li>
+                <a href="Qualification.html">
+                    <!-- this anchor text for link your portfolio page to another page -->
+                    <div class="icon">
+
+                        <i class="fa fa-solid fa-graduation-cap" aria-hidden="true "></i>
+                        <!-- this is picture icon link get form fornt-awesome icon for portfolio -->
+                        <i class="fa fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Qualification">Qualification</span></div>
+                    <!-- we are create fourth menu item name portfolio -->
+                </a>
+            </li>
+            <li>
+                <a href="Marksheet.html">
+                    <!-- this anchor text for link your team page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-solid fa-file" aria-hidden="true"></i>
+                        <!-- this is picture icon link get form fornt-awesome icon for portfolio -->
+                        <i class="fa fa-solid fa-file" aria-hidden="true"></i>
+                        <!-- copy and paste the home icon link here for hover effect -->
+                    </div>
+                    <div class="name"><span data-text="Marksheet">Marksheet</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="Upload.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-solid fa-upload" aria-hidden="true"></i>
+                        <!-- this is picture icon link get form fornt-awesome icon for portfolio -->
+                        <i class="fa fa-solid fa-upload" aria-hidden="true"></i>
+                        <!-- copy and paste the home icon link here for hover effect -->
+                    </div>
+                    <div class="name"><span data-text="Upload">Upload</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+        </ul>
+
+
+        <!------------------------------------------FORM CODE------------------------------------------------------------------------>
+        <Container class="box">
+            <div class="container">
+
+                <form action="" class="form-horizontal">
+                    <h2 style="margin: 20px; color: blue;"> Correspondence Address</h2>
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id1">Premise No./Name </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2">
+                        </div>
+                        
+                    </div>
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id1">Sub Locality/Colony(Optional) </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2" >
+                            
+
+
+
+                        </div>
+                        
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id2">Locality/City/Town/Village</label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+                        </div>
+                        
+                        <label class="control-label col-sm-2" for="id2"> Pin Code </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2">
+                        </div>
+                    </div>
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id2">District </label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+                        </div>
+                        <label class="control-label col-sm-2" for="id2">State </label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id1">Country </label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id1">Alternate Contact No.(Optional) </label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+                            
+
+                            
+
+
+                        </div>
+                        <label class="control-label col-sm-2" for="id2"> </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2" type="number" maxlength="10">
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id2">Alternate Email-ID </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2" type="email">
+                        </div>
+                    </div>
+
+
+                    
+
+
+                    <h3 style="color: blue"> Permanent Address</h3>
+                    <hr>
+
+
+                    <div class="form-group has-success">
+                        
+                        <div class="col-sm-6">
+                            <input class="checkbox" id="checkbox" type="checkbox">
+                        </div>
+                        <label class="checkbox" for="id2"  id="label-ck"> Same as the correspondence address </label>
+                    </div>
+
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id1">Premise No./Name </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2">
+                        </div>
+                        
+                    </div>
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id1">Sub Locality/Colony(Optional) </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2" >
+                            
+
+
+
+                        </div>
+                        
+                    </div>
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id2">Locality/City/Town/Village</label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+                        </div>
+                        
+                        <label class="control-label col-sm-2" for="id2"> Pin Code </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2">
+                        </div>
+                    </div>
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id2">District </label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+                        </div>
+                        <label class="control-label col-sm-2" for="id2">State </label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+                        </div>
+                        
+
+                    </div>
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id1">Country </label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id1">Alternate Contact No.(Optional) </label>
+                        <div class="col-sm-6">
+                            <select name="pass-month" class="form-control" id="id1">
+                                <option value="rigatoni">Rigatoni</option>
+                                <option value="dave">Dave</option>
+                                <option value="pumpernickel">Pumpernickel</option>
+                                <option value="reeses">Reeses</option>
+                            </select>
+                            
+
+                            
+
+
+                        </div>
+                        <label class="control-label col-sm-2" for="id2"> </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2" type="number" maxlength="10">
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-group has-success">
+                        <label class="control-label col-sm-2" for="id2">Alternate Email-ID </label>
+                        <div class="col-sm-6">
+                            <input class="form-control" id="id2" type="email">
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    
+                    <div class="container">
+                        <button type="button" class="btn btn-success" id="btn-sucess">
+                            Back
+                        </button>
+                        <button type="button" class="btn btn-secondary" id="btn-secondry">
+                            Next
+                        </button>
+
+
+                    </div>
+
+    </body>
+
+</html>
+</body>
+
+</html>

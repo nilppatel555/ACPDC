@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uploaded-Marksheet</title>
+    <link rel="stylesheet" type="text/css" href="static\css\DisplayMarksheet2.css">
+     <!-- connect css file with html useing link tag -->
+     <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!--     
+   <script src   ="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+
+   <ul>
+            
+    <!-- <li>
+      
+        <a href="Registration.html">
+          
+            <div class="icon">
+                <i class="fa  fa-book" aria-hidden="true"></i>
+                <i class="fa fa-book" aria-hidden="true"></i>
+            </div>
+            <div class="name"><span data-text="Registration">Registration</span></div>
+            
+    </li> -->
+    <li>
+        <a href="Profile.html">
+            <!-- this anchor text for link your About page to another page -->
+            <div class="icon">
+                <i class="fa fa-user" aria-hidden="true"></i>
+                 <i class="fa fa-user" aria-hidden="true"></i><!-- this is file icon link get form fornt-awesome icon for about -->	
+              <!-- copy and paste the file icon link here for hover effect -->		
+            </div>
+            <div class="name"><span data-text="Profile">Profile</span></div>
+            <!-- we are create second menu item name About -->
+        </a>
+    </li>
+    <li>
+        <a href="Contact.html">
+            <!-- this anchor text for link your service page to another page -->
+            <div class="icon">
+                <i class="fa fa-phone"></i><!-- this is cogs icon link get form fornt-awesome iocn for service menu -->	
+                <i class="fa fa-phone"></i><!-- copy and paste the cogs icon link here for hover effect -->	
+            </div>
+            <div class="name"><span data-text="Contact">Contact</span></div>
+            <!--- we are create third menu item name services -->
+        </a>
+    </li>
+    <li>
+        <a href="Qualification.html">
+            <!-- this anchor text for link your portfolio page to another page -->
+            <div class="icon">
+                
+                <i class="fa fa-solid fa-graduation-cap" aria-hidden="true "></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                <i class="fa fa-solid fa-graduation-cap" aria-hidden="true"></i>		
+            </div>
+            <div class="name" ><span data-text="Qualification">Qualification</span></div>
+            <!-- we are create fourth menu item name portfolio -->
+        </a>
+    </li>
+    <li>
+        <a href="#">
+            <!-- this anchor text for link your team page to another page -->
+            <div class="icon">
+                <i class="fa on fa-solid fa-file" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                <i class="fa fa-solid fa-file" aria-hidden="true"></i>
+                <!-- copy and paste the home icon link here for hover effect -->			
+            </div>
+            <div class="name on"><span data-text="Marksheet">Marksheet</span></div>
+            <!-- we create first menu item name home -->
+        </a>
+    </li>
+    <li>
+        <a href="Upload.html">
+            <!-- this anchor text for link your home to another page -->
+            <div class="icon">
+                <i class="fa fa-solid fa-upload" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 		
+                <i class="fa fa-solid fa-upload" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->		
+            </div>
+            <div class="name"><span data-text="Upload">Upload</span></div>
+            <!-- we create first menu item name home -->
+        </a>
+    </li>
+</ul>
+
+
+
+  
+    <Container class="Registration-Form">
+  
+   
+
+<div class="loader">
+<div id="load"></div>
+<div class="content">
+        <h1 class="text">Uploaded 10th Marksheet/Certificate</h1>
+
+
+        <div id="display_img" class="Container2" name="displaym">
+           <img src="" id="tableBanner"/>
+           <script>
+            var dataImage = localStorage.getItem('imgData');
+            bannerImg = document.getElementById('tableBanner');
+            bannerImg.src = "data:image/png;base64,"+dataImage;
+           </script>
+        </div>
+
+                <center>
+                    <div class="table">
+                    <table border="1" id="table">
+                        <tr>
+                        <th class="th">Name</th>
+                        <th class="th">Passing Status</th>
+                        <th class="th">Max Marks</th>
+                        <th class="th">Obtained Marks</th>
+                        </tr>
+                        <tr>
+                            <th class="sub"> Mathematics</th>
+                            <td><input type="text" class="select" readonly>
+                
+                            </td>
+                            <td>
+                                <input class="in"  value="100"  type="text" disabled>
+                            </td>
+                            <td>
+                                <input class="in" type="text">
+                            </td>
+                        </tr>
+                        <tr>
+                          <th class="sub">Science/Science & Technology</th>  
+                          <td>
+                            <input type="text" class="select" readonly>
+                             
+                          </td>
+                          <td>
+                            <input class="in" value="100" disabled type="text">
+                          </td>
+                          <td>
+                            <input class="in" type="text">
+                          </td>
+                        </tr>
+                        <tr>
+                            <th class="sub">English</th>
+                            <td>
+                                <input type="text" readonly class="select">
+                                 
+                            </td>
+                            <td>
+                                <input class="in" value="100" disabled type="text">
+                            </td>
+                            <td>
+                                <input class="in" type="text">
+                            </td>
+                        </tr>
+                        
+                    </table>
+             
+                    </div>
+                </center>
+                </div>
+<!-- 
+                <script>
+                    $(window).on('load',function(){
+                        $(".loader").fadeOut(2000);
+                        $(".content").fadeIn(2000);
+                    })
+                </script> -->
+
+
+                </div>
+
+                <button class="btn ">Next</button>
+ 
+    </Container>
+
+</body>
+</html>

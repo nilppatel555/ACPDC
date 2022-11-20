@@ -1,0 +1,204 @@
+<html>
+    <body>
+      
+    <head>
+        <title>Registration-Page</title>
+        <!-- change or write your page title with the help of title tags-->
+        <link rel="stylesheet" type="text/css" href="static\css\Marksheet2.css">
+        <!-- connect css file with html useing link tag -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- link this font-awesome icon css link with html file for accessing all fornt awesome
+        icon form boostrapcdn.com -->
+    </head>
+    <body>
+        <ul>
+            
+            <!-- <li>
+              
+                <a href="Registration.html">
+                  
+                    <div class="icon">
+                        <i class="fa  fa-book" aria-hidden="true"></i>
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Registration">Registration</span></div>
+                    
+            </li> -->
+            <li>
+                <a href="Profile.html">
+                    <!-- this anchor text for link your About page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                         <i class="fa fa-user" aria-hidden="true"></i><!-- this is file icon link get form fornt-awesome icon for about -->	
+                      <!-- copy and paste the file icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Profile">Profile</span></div>
+                    <!-- we are create second menu item name About -->
+                </a>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    <!-- this anchor text for link your service page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-phone"></i><!-- this is cogs icon link get form fornt-awesome iocn for service menu -->	
+                        <i class="fa fa-phone"></i><!-- copy and paste the cogs icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Contact">Contact</span></div>
+                    <!--- we are create third menu item name services -->
+                </a>
+            </li>
+            <li>
+                <a href="Qualification.html">
+                    <!-- this anchor text for link your portfolio page to another page -->
+                    <div class="icon">
+                        
+                        <i class="fa fa-solid fa-graduation-cap" aria-hidden="true "></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-solid fa-graduation-cap" aria-hidden="true"></i>		
+                    </div>
+                    <div class="name" ><span data-text="Qualification">Qualification</span></div>
+                    <!-- we are create fourth menu item name portfolio -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- this anchor text for link your team page to another page -->
+                    <div class="icon">
+                        <i class="fa on fa-solid fa-file" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-solid fa-file" aria-hidden="true"></i>
+                        <!-- copy and paste the home icon link here for hover effect -->			
+                    </div>
+                    <div class="name on"><span data-text="Marksheet">Marksheet</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="Upload.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-solid fa-upload" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 		
+                        <i class="fa fa-solid fa-upload" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Upload">Upload</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+        </ul>
+
+
+        <Container class="Registration-Form">
+            <form>
+
+                <h1 class="text">Upload 10th Marksheet/Certificate</h1>
+
+
+                <div class="box1">
+                <label class="l namelabel">Document No.</label>
+            <input class="next name"  id="a" type="text" required><br>
+
+
+            <div  class="up-btn">
+                <input type="file"  accept="image/*" name="image"  id="file" class="js" style="display: none;" required>
+               <script>
+                bannerImage = document.getElementById("file");
+                imgData = getBase64Image(bannerImage);
+                localStorage.setItem("imgData",imgData);
+
+                function getBase64Image(img){
+                    var canvas = document.createElement("canvas");
+                    canvas.width = img.width;
+                    canvas.height = img.height;
+
+                    var ctx = canvas.getContext("2d");
+                    ctx.drawImage(img,0,0);
+
+                    var dataURL = canvas.toDataURL("image/png");
+
+                    return dataURL.replace(/^data:image\/(png|jpg);base64,/,"");
+
+                }
+               </script>
+                <label for="file"><i class="fa icon fa-2x fa-upload" aria-hidden="true"></i></label>
+            </div>
+            <pre id="pre">Choose your file in jpg format
+Size : 10 KB to 100 KB</pre>
+
+</div>
+
+          <div id="display_img" class="Container2">
+
+          </div>
+
+          <script src="static\javascript\Marksheet.jsf"></script>
+            
+            <center>
+                <div class="table">
+                <table border="1" id="table">
+                    <tr>
+                    <th class="th">Name</th>
+                    <th class="th">Passing Status</th>
+                    <th class="th">Max Marks</th>
+                    <th class="th">Obtained Marks</th>
+                    </tr>
+                    <tr>
+                        <th class="sub">Mathematics</th>
+                        <td><select class="select">
+                            <option>Passed</option>
+                        </select></td>
+                        <td>
+                            <input class="in" value="100" disabled type="text">
+                        </td>
+                        <td>
+                            <input class="in" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                      <th class="sub">Science/Science & Technology</th>  
+                      <td>
+                        <select class="select">
+                            <option>Passed</option>
+                        </select>
+                      </td>
+                      <td>
+                        <input class="in" type="text">
+                      </td>
+                      <td>
+                        <input class="in" type="text">
+                      </td>
+                    </tr>
+                    <tr>
+                        <th class="sub">English</th>
+                        <td>
+                            <select class="select">
+                                <option>Passed</option>
+                            </select>
+                        </td>
+                        <td>
+                            <input class="in" type="text">
+                        </td>
+                        <td>
+                            <input class="in" type="text">
+                        </td>
+                    </tr>
+                </table>
+         
+            </center>
+
+            <center>
+            <!-- <button class="btn ">Back</button> -->
+<!-- 
+            <button  class="btn2" id="submit" >Submit</button> -->
+            
+            <button type="submit" class="button" onclick="this.classList.toggle('button--loading')" onsubmit="return checkForm(this)" onclick="ValueSender()">
+                <span class="button__text">Submit</span>
+            </button>
+
+            </center>
+
+            <script src="static\javascript\table.js"></script>
+            
+        </form>
+        </Container>
+     
+
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<html>
+    <body>
+      
+    <head>
+        <title>Registration-Page</title>
+        <!-- change or write your page title with the help of title tags-->
+        <link rel="stylesheet" type="text/css" href="static\css\Marksheet.css">
+        <!-- connect css file with html useing link tag -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- link this font-awesome icon css link with html file for accessing all fornt awesome
+        icon form boostrapcdn.com -->
+    </head>
+    <body>
+        <ul>
+            <!--starting ul tag to create unordered lists.-->
+            <li>
+                <!--The HTML li element is used to represent an item in a list. ... In menus and unordered lists-->
+                <!--the a tag defines a hyperlink, which is used to link from one page to another-->
+                <a href="Registration.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa  fa-book" aria-hidden="true"></i><!-- this is home icon link get form fornt-awesome icon for home button -->	
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Registration">Registration</span></div>
+                    <!-- we are create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="Profile.html">
+                    <!-- this anchor text for link your About page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                         <i class="fa fa-user" aria-hidden="true"></i><!-- this is file icon link get form fornt-awesome icon for about -->	
+                      <!-- copy and paste the file icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Profile">Profile</span></div>
+                    <!-- we are create second menu item name About -->
+                </a>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    <!-- this anchor text for link your service page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-phone"></i><!-- this is cogs icon link get form fornt-awesome iocn for service menu -->	
+                        <i class="fa fa-phone"></i><!-- copy and paste the cogs icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Contact">Contact</span></div>
+                    <!--- we are create third menu item name services -->
+                </a>
+            </li>
+            <li>
+                <a href="Qualification.html">
+                    <!-- this anchor text for link your portfolio page to another page -->
+                    <div class="icon">
+                        
+                        <i class="fa fa-solid fa-graduation-cap" aria-hidden="true "></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-solid fa-graduation-cap" aria-hidden="true"></i>		
+                    </div>
+                    <div class="name" ><span data-text="Qualification">Qualification</span></div>
+                    <!-- we are create fourth menu item name portfolio -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- this anchor text for link your team page to another page -->
+                    <div class="icon">
+                        <i class="fa on fa-solid fa-file" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-solid fa-file" aria-hidden="true"></i>
+                        <!-- copy and paste the home icon link here for hover effect -->			
+                    </div>
+                    <div class="name on"><span data-text="Marksheet">Marksheet</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="Upload.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-solid fa-upload" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 		
+                        <i class="fa fa-solid fa-upload" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Upload">Upload</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+        </ul>
+
+
+        <Container class="Registration-Form">
+            <form method=post enctype=multipart/form-data>
+
+                <h1 class="text">Upload 10th Marksheet/Certificate</h1>
+
+
+                <div class="box1">
+                <label class="l namelabel">Document No.</label>
+            <input class="next name" type="text" name="docnum"><br>
+
+
+            <div  class="up-btn">
+                <input type="file"  accept="image/*" name="file"  id="file" class="js" style="display: none;">
+                <label for="file"><i class="fa icon fa-2x fa-upload" aria-hidden="true"></i></label>
+            </div>
+            <pre id="pre">Choose your file in jpg format
+Size : 10 KB to 100 KB</pre>
+
+</div>
+
+          <div id="display_img" class="Container2">
+
+          </div>
+
+          <script src="static\javascript\Marksheet.js"></script>
+            
+            <center>
+                
+            </center>
+
+            <center>
+            <button class="btn ">Back</button>
+            
+                <input type=submit value=Upload>
+              
+            <button class="btn ">Next</button>
+            </center>
+            
+        </Container>
+    </form> 
+
+    </body>
+</html>

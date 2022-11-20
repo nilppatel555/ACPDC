@@ -1,0 +1,215 @@
+<html>
+    <body>
+      
+    <head>
+        <title>Registration-Page</title>
+        <!-- change or write your page title with the help of title tags-->
+        <link rel="stylesheet" type="text/css" href="static\css\Profile.css">
+        <!-- connect css file with html useing link tag -->
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- link this font-awesome icon css link with html file for accessing all fornt awesome
+        icon form boostrapcdn.com -->
+    </head>
+    <body>
+        <ul>
+            <!--starting ul tag to create unordered lists.-->
+            <li>
+                <!--The HTML li element is used to represent an item in a list. ... In menus and unordered lists-->
+                <!--the a tag defines a hyperlink, which is used to link from one page to another-->
+                <a href="Registration.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- this is home icon link get form fornt-awesome icon for home button -->	
+                        <i class="fa fa-book" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Registration">Registration</span></div>
+                    <!-- we are create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <!-- this anchor text for link your About page to another page -->
+                    <div class="icon">
+                        <i class="fa on fa-user" aria-hidden="true"></i>
+                         <i class="fa fa-user" aria-hidden="true"></i><!-- this is file icon link get form fornt-awesome icon for about -->	
+                      <!-- copy and paste the file icon link here for hover effect -->		
+                    </div>
+                    <div class="name on"><span data-text="Profile">Profile</span></div>
+                    <!-- we are create second menu item name About -->
+                </a>
+            </li>
+            <li>
+                <a href="Contact.html">
+                    <!-- this anchor text for link your service page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-phone"></i><!-- this is cogs icon link get form fornt-awesome iocn for service menu -->	
+                        <i class="fa fa-phone"></i><!-- copy and paste the cogs icon link here for hover effect -->	
+                    </div>
+                    <div class="name"><span data-text="Contact">Contact</span></div>
+                    <!--- we are create third menu item name services -->
+                </a>
+            </li>
+            <li>
+                <a href="Qualification.html">
+                    <!-- this anchor text for link your portfolio page to another page -->
+                    <div class="icon">
+                        
+                        <i class="fa fa-solid fa-graduation-cap" aria-hidden="true "></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-solid fa-graduation-cap" aria-hidden="true"></i>		
+                    </div>
+                    <div class="name" ><span data-text="Qualification">Qualification</span></div>
+                    <!-- we are create fourth menu item name portfolio -->
+                </a>
+            </li>
+            <li>
+                <a href="Marksheet.html">
+                    <!-- this anchor text for link your team page to another page -->
+                    <div class="icon">
+                        <i class="fa fa-solid fa-file" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 	
+                        <i class="fa fa-solid fa-file" aria-hidden="true"></i>
+                        <!-- copy and paste the home icon link here for hover effect -->			
+                    </div>
+                    <div class="name"><span data-text="Marksheet">Marksheet</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+            <li>
+                <a href="Upload.html">
+                    <!-- this anchor text for link your home to another page -->
+                    <div class="icon">
+                        <i class="fa fa-solid fa-upload" aria-hidden="true"></i><!-- this is picture icon link get form fornt-awesome icon for portfolio --> 		
+                        <i class="fa fa-solid fa-upload" aria-hidden="true"></i><!-- copy and paste the home icon link here for hover effect -->		
+                    </div>
+                    <div class="name"><span data-text="Upload">Upload</span></div>
+                    <!-- we create first menu item name home -->
+                </a>
+            </li>
+        </ul>
+        <Container class="Registration-Form">
+            <form>
+            <h1 class="text">Personal-Details</h1>
+
+            
+            <label class="l namelabel">Candidate's name as per 10th Marksheet </label>
+            <input class="next name" type="text"><br>
+
+            
+            <label class="l namelabel">Father's Name </label>
+            <input class="next name" type="text"><br>
+
+            <label class="l namelabel">Mother's Name </label>
+            <input class="next name" type="text"><br>
+
+
+            <label class="l namelabel">Date of Birth</label>
+            <input class="next name" type="date"><br>
+
+
+            <label class="l namelabel">Gender</label>
+            <input class="radio" type="radio" name="gender" value="Male">Male
+            <input class="radio" type="radio" name="gender"
+            value="Female" style="margin-left: 8px;">Female
+            <input class="radio" type="radio" name="gender"
+            value="Other" style="margin-left: 8px;" >Other
+
+
+            <label class="l namelabel">Nationality</label>
+           <select class="next select">
+            <option value="Indian">Indian</option>
+           </select>
+
+           <label class="l namelabel">Domicile</label>
+           <select class="next select">
+            <option value="Gujarat">Gujarat</option>
+           </select>
+
+           <label class="l namelabel">Category</label>
+           <select class="next select">
+            <option value="General">General</option>
+            <option value="OBC">OBC</option>
+            <option value="SC">SC</option>
+            <option value="ST">ST</option>
+           </select>
+
+
+           <h1 class="text">Sub Category Details</h1>
+
+
+           <label class="l namelabel">Physically Handicapped</label>
+           <input class="radio" type="radio" name="sub" value="Yes">Yes
+           <input class="radio" type="radio" name="sub"
+           value="No" style="margin-left: 8px;">No
+
+
+           <label class="l namelabel">Ex-Servicemen</label>
+           <input class="radio" type="radio" name="sub2" value="Yes">Yes
+           <input class="radio" type="radio" name="sub2"
+           value="No" style="margin-left: 8px;">No
+
+           <label class="l namelabel">Tuition Fee Wavier</label>
+           <input class="radio" type="radio" name="sub3" value="Yes">Yes
+           <input class="radio" type="radio" name="sub3"
+           value="No" style="margin-left: 8px;">No
+
+
+           <h1 class="text">Other Details</h1>
+
+           <label class="l namelabel">Family Annual Income As per Income Certificate </label>
+           <select class="next select" required>
+            <optgroup label="--select--">
+            <option value="Less than 2.5 Lakh">Less than 2.5 Lakh</option>
+            <option value="2.51 Lakh to 8 Lakh">2.51 Lakh to 8 Lakh</option>
+            <option value="Greater than 8 Lakh">Greater than 8 Lakh</option>
+            </optgroup>
+           </select>
+            
+           <label class="l namelabel">Do your parents have Certificate of service </label>
+           <input class="radio" type="radio" name="other" value="Yes">Yes
+           <input class="radio" type="radio" name="other"
+           value="No" style="margin-left: 8px;">No
+
+
+           <h1 class="text">Bank Details for Refund ( Optional )</h1>
+
+           
+
+           <label class="l namelabel">Name of Account Holder</label>
+           <input class="next name" type="text"><br>
+
+           
+           <label class="l namelabel">Account Number</label>
+           <input class="next name" type="text"><br>
+
+           
+           <label class="l namelabel">Confirm Account Number</label>
+           <input class="next name" type="text"><br>
+
+           
+           <label class="l namelabel">IFSC Number</label>
+           <input class="next name" type="text"><br>
+
+           <label class="l namelabel">Bank Name</label>
+           <input class="next name" type="text"><br>
+
+
+           <label class="l namelabel">Branch Name</label>
+           <input class="next name" type="text"><br>
+
+           <label class="l namelabel">Upload Cancelled Cheque image</label>
+           <button class="nextb"><i class="fa fa-2x fa-upload" aria-hidden="true" style="color: blue;"></i></button>
+           <pre class="pre">Choose your file in jpg format
+Size : 10KB to 100KB</pre>
+            
+     <center>
+            <button class="btn">Back</button>
+
+            <button class="btn">Next</button>
+            </center>
+            
+            </form>           
+        </Container>
+    </body>
+</html>
+    </body>
+</html>
+

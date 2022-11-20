@@ -1,0 +1,80 @@
+.bar {
+	position: absolute;
+	margin-top: 28px;
+	left: 15.5%; 
+	height: 7vh;
+	width: 134vh;
+    overflow: hidden;
+	background: #fff; 
+	border-radius: 10px; /* add the border radius */
+	box-shadow: 0 10px 30px rgba(0,0,0,.3)
+}
+
+
+.bar .home {
+	border: hidden;
+	background-color: blue;
+	color: white;
+	height: 7vh;
+	width: 5vw;
+    cursor: pointers;
+}
+
+
+.box{
+    position: absolute;
+	/*inspect 
+	top: 30%;
+	left: 23%;
+	height: 70vh;
+	width: 50vh; */
+	/* 1352-1007 
+	top: 18%;
+	left: 11%;
+	height: 80vh;
+	width: 105vh; */
+	top: 15%;
+	left: 15.5%;
+	height: 80vh;
+	width: 134vh;
+	background: #fff; 
+	border-radius: 10px; /* add the border radius */
+	box-shadow: 0 10px 30px rgba(0,0,0,.3)
+}
+
+
+.btn {
+    height: 30px;
+    width: 125px;
+    margin-left: 22px;
+    background-color: blue;
+    color: white;
+    border-radius: 8px;
+    border: hidden;
+    }
+
+
+.form-group {
+    display: inline-block;
+    margin-left:18px ;
+    
+}
+
+
+.form-control {
+    margin-left: 18px;
+    width: 1rem;
+
+   
+   
+}
+
+label {
+    margin-left: 18px;
+}
+
+
+
+
+
+

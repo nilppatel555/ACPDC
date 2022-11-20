@@ -1,0 +1,199 @@
+/* Add a sky blue background color to the body background */
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;/* we can change font style by using the font-familiy css tag */
+
+}
+ul{
+	position:absolute;/* set the position of the navigation bar*/
+	top: 8%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: 0;
+	padding: 20px 0; /* Adding some padding */
+	background: #fff; /* Add a white background color to the top navigation */
+	display: flex; /* flex Set navigation bar horizontally using the  display tag*/
+	border-radius: 10px; /* add the border radius */
+	box-shadow: 0 10px 30px rgba(0,0,0,.3)
+}
+ /* Style the links inside the navigation bar */
+ul li{
+	list-style: none;
+	text-align: center;
+	display: block;
+	border-right: 1px solid rgba(0,0,0,0.2);
+}
+ul li:last-child{
+	border-right: none;
+}
+ul li a{
+	text-decoration: none;
+	padding: 0 50px;
+	display: block;
+}
+/* Style the icon inside the navigation bar */
+ul li a .icon{
+	width: 40px; /* changing the width of the icon */
+	height: 40px; /* changing the height of the icon */
+	text-align: center;
+	
+	overflow: hidden;
+	margin: 0 auto 10px;
+	
+}
+/* set the size, height, width of the icon*/
+ul li a .icon .fa{
+	width: 100%;
+	height: 100%;
+	line-height: 40px;
+	font-size: 34px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	color: #000;
+}
+
+ul li a .icon .on{
+    color: blue;
+}
+
+/* Change the color of icon on hover */
+ul li a .icon .fa:last-child{
+	color: blue;
+}
+/* style the color and transform of the icon on hover */
+ul li a:hover .icon .fa{
+	transform: translateY(-100%); /* translate y to add the hover effect */
+}
+ul li a .name{
+	position: relative;
+	height: 20px; 
+	width: 100%;
+	display: block;
+	overflow: hidden;/*make ul li a .name overflow is hidden*/
+}
+/*style the font size and set transition of the navigation menu*/
+ul li a .name span{
+	display: block;
+	position: relative;
+	color: #000;
+	font-size: 18px; /* changing font size */
+	line-height: 20px;
+	transition: 0.5s; /* adding the transition to make it more attractive */
+	
+}
+ul li a .on span{
+	color: blue;
+}
+/*set and change position, top, width, left, height color of the 'class'.name span:before*/
+ul li a .name span:before{
+	content: attr(data-text);
+	position: absolute;
+	top: -100%;
+	width: 100%;
+	left: 0;
+	height: 1005;
+	color: blue;
+	
+}
+/*style hover effect of ul li a .name span */
+ul li a:hover .name span{
+	transform: translateY(20px);
+}
+
+
+.Registration-Form{
+	position: absolute;
+	/*inspect 
+	top: 30%;
+	left: 23%;
+	height: 70vh;
+	width: 50vh; */
+	/* 1352-1007 
+	top: 18%;
+	left: 11%;
+	height: 80vh;
+	width: 105vh; */
+	top: 18%;
+	left: 15.5%;
+	height: 198vh;
+	width: 133vh;
+	background: #fff; 
+	border-radius: 10px; /* add the border radius */
+	box-shadow: 0 10px 30px rgba(0,0,0,.3)
+}
+
+.Registration-Form .text{
+	
+	margin-left: 29px;
+	color: blue;	
+}
+
+.l {
+	font-size: x-large;
+	display: inline-block;
+	padding-top: 3.5vh;
+	margin-left: 2vw;
+	width: 35vw;
+}
+
+.next {
+	display: inline-block;
+    width: 310px !important;
+    height: 30px !important;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box; 
+}
+
+.nextb {
+	display: inline-block;
+	height: 30px !important;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box; 
+	 background-color: white;
+
+}
+
+.pre {
+display: inline-block;
+}
+
+.radio {
+   display: inline-block;
+  
+}
+
+
+.mobileno {
+	margin-left: 2.5vw;
+	display: inline-block;
+	height: 30px !important;
+}
+
+.countrycode {
+	display: inline-block;
+	-moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+     box-sizing: border-box; 
+	 height: 30px !important;
+	 width: 100px !important;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.btn {
+	margin-right: 2vw;
+	width: 150px;
+    height: 30px;
+	margin-top: 3vh;
+	border-radius: 6px;
+	border: hidden;
+	background-color: blue;
+	color: white;
+}
+
+.fa-mine {
+	margin-left: 1vw;
+}
